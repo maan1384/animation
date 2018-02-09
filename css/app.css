@@ -30,155 +30,51 @@ body {
   margin-left: 285px;
   display: inline-block;
   padding-top: 20px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  font-size: 40px;
+  color: black;
 }
 
 /* TRANSITION CSS */
-.rectangle1 {
-  background-color:lightgreen;
-  width: 50px;
-  height: 50px;
+.text0 {
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
   transition: width 2s;
   transition-duration: 3s;
-  display: inline-block;
-  transition-timing-function: linear;
-  border-radius: 20px;
+}
+.text1 {
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  transition: width 2s;
+  transition-duration: 3s;
+  opacity: 0;
 }
 
-.rectangle1:hover {
+.text0, .text1 {
+  transition: opacity 0.5s linear}
+}
+
+.container:hover .text0 {
+  opacity: 0;
+}
+.container:hover .text1 {
+  opacity: 1;
+  background-color: yellow;
   width: 500px;
-  height: 70px;
-}
-.rectangle2 {
-  background-color:green;
-  width: 60px;
-  height: 60px;
-  transition: width 2s;
-  transition-duration: 3s;
-  display: inline-block;
-  transition-timing-function: linear;
-  border-radius: 20px;
+  height: 500px;
+  line-height: 90px;
 }
 
-.rectangle2:hover {
-  width: 750px;
-  height: 90px;
-}
-.rectangle3 {
-  background-color:darkgreen;
-  width: 70px;
-  height: 70px;
-  transition: width 2s;
-  transition-duration: 3s;
-  display: inline-block;
-  transition-timing-function: linear;
-  border-radius: 20px;
-}
-
-.rectangle3:hover {
-  width: 1000px;
-}
-.rectangle4 {
-  background-color:green;
-  width: 60px;
-  height: 60px;
-  transition: width 2s;
-  transition-duration: 3s;
-  display: inline-block;
-  transition-timing-function: linear;
-  border-radius: 20px;
-}
-
-.rectangle4:hover {
-  width: 750px;
-  height: 80px;
-}
-.rectangle5 {
-  background-color:lightgreen;
-  width: 50px;
-  height: 50px;
-  transition: width 2s;
-  transition-duration: 3s;
-  display: inline-block;
-  transition-timing-function: linear;
-  border-radius: 20px;
-}
-
-.rectangle5:hover {
-  width: 500px;
-  height: 70px;
-}
 
 /* TRANFORM CSS */
 
-.circle0 {
-  background: red;
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  transition: transform 1s;
-}
 
-.circle0:hover {
-  transform: scale(2);
-}
-.circle1 {
-  background: lightblue;
-  border-radius: 40px;
-  height: 80px;
-  width: 80px;
-  transition: transform 3s;
-}
-
-.circle1:hover {
-  transform: scale(3);
-}
-.circle2 {
-  background: green;
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-  transition: transform 2s;
-}
-
-.circle2:hover {
-  transform: scale(4);
-}
-
-.circle3 {
-  background: darkblue;
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-  transition: transform 2s;
-}
-
-.circle3:hover {
-  transform: scale(3);
-}
-
-.circle4 {
-  background: pink;
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-  transition: transform 2s;
-}
-
-.circle4:hover {
-  transform: scale(5);
-}
-
-.circle5 {
-  background: darkorange;
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  transition: transform 2s;
-}
-
-.circle5:hover {
-  transform: scale(2);
-}
 
 
 
