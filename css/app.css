@@ -111,19 +111,16 @@ p {
   font-size: 50px;
 }
 
-
-
-
-
 /* SPRITE CSS */
 
 .skate {
     width: 90.2px;
-    height: 468px;
-    background-image: url("img/sprite.png") left center;
+    height: 38px;
+    background-image: url("img/sprite.png");
             animation: play .8s steps(10) infinite;
 }
 
 @keyframes play {
-  100% {background-position: -902px;}
+  from {background-position: 0px;}
+  to {background-position: -902px;}
 }
