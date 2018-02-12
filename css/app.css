@@ -12,6 +12,13 @@ h1 {
 body {
   background-color: white;
 }
+p {
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 1.7em;
+}
+.mid {
+  text-align: center;
+}
 /* NAV CSS */
 .center {
   font-family: 'Dhurjati', sans-serif;
@@ -59,14 +66,64 @@ body {
 }
 
 /* TRANFORM CSS */
-
-
-
-
-
+@keyframes song {
+  0% {
+    transform: scale(3);
+    content: "Shit";
+  }
+  10% {
+    transform: rotate(10deg);
+    content: "Piss Cunt";
+  }
+  20% {
+    transform: rotate(-20deg);
+    content: "Cock-sucker";
+  }
+  40% {
+    transform: scale(-3);
+    transform: rotate(40deg);
+    content: "Motherfucker";
+  }
+  60% {
+    content: "Tits";
+    }
+  80% {
+    transform: rotate(10deg);
+    content: "Fart";
+  }
+  100% {
+    transform: rotate(-20deg);
+    content: "Turd and Twat";
+  }
+}
+.song {
+  display: flex;
+          align-items: center;
+          justify-content: center;
+  font-family:  'Dhurjati', sans-serif;
+  background-color: lightblue;
+  line-height: 100px;
+}
+.song:after {
+          animation: song 2.5s linear infinite;
+  display: block;
+  content: "Shit";
+  font-size: 50px;
+}
 
 
 
 
 
 /* SPRITE CSS */
+
+.skate {
+    width: 90.2px;
+    height: 468px;
+    background-image: url("img/sprite.png") left center;
+            animation: play .8s steps(10) infinite;
+}
+
+@keyframes play {
+  100% {background-position: -902px;}
+}
