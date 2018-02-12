@@ -19,6 +19,32 @@ p {
 .mid {
   text-align: center;
 }
+.circle0 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  transition: ease-in-out 1s ;
+  border-radius: 100px;
+}
+.circle1 {
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  transition: ease-in-out 1s;
+  opacity: 0;
+  border-radius: 100px;
+}
+
+.cirlce0, .circle1 {
+  transition: 1s;
+}
+
+.container:hover .circle0 {
+  opacity: 0;
+}
+.container:hover .circle1 {
+  opacity: 1;
+}
 /* NAV CSS */
 .center {
   font-family: 'Dhurjati', sans-serif;
@@ -117,7 +143,7 @@ p {
     width: 90.2px;
     height: 38px;
     background-image: url("img/sprite.png");
-            animation: play .8s steps(10) infinite;
+    animation: play 3s steps(10) infinite;
 }
 
 @keyframes play {
