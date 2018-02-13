@@ -44,6 +44,7 @@ p {
 }
 .container:hover .circle1 {
   opacity: 1;
+
 }
 /* NAV CSS */
 .center {
@@ -142,8 +143,9 @@ p {
 .skate {
     width: 90.2px;
     height: 38px;
+    display: block;
     background-image: url("img/sprite.png");
-    animation: play 3s steps(10) infinite;
+            animation: play 3s steps(8) infinite;
 }
 
 @keyframes play {
