@@ -112,6 +112,7 @@ p {
     content: "Motherfucker";
   }
   60% {
+    transform: scale(5);
     content: "Tits";
     }
   80% {
@@ -130,6 +131,7 @@ p {
   font-family:  'Dhurjati', sans-serif;
   background-color: lightblue;
   line-height: 100px;
+  color: white;
 }
 .song:after {
           animation: song 2.5s linear infinite;
@@ -140,15 +142,17 @@ p {
 
 /* SPRITE CSS */
 
-.skate {
-    width: 90.2px;
-    height: 38px;
-    display: block;
-    background-image: url("img/sprite.png");
-            animation: play 3s steps(8) infinite;
+#sprite{
+        display: block;
+        margin: 0 auto;
+        padding-top: 100px;
+        animation: square 2s infinite;
 }
 
-@keyframes play {
-  from {background-position: 0px;}
-  to {background-position: -902px;}
-}
+@keyframes square{
+  0%   {transform:translate(0,-50px);}
+  25%  {transform:translate(0,0);}
+  50%  {transform:translate(0,-50px);}
+  75%  {transform:translate(0,0);}
+  100%   {transform:translate(0,-50px);}
+  }
